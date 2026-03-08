@@ -1,0 +1,99 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+/* Card Container */
+.container {
+  background: #ffffff;
+  padding: 40px 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Title */
+.container h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Input Focus Effect */
+.container input:focus {
+  border-color: #6c63ff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.4);
+}
+
+/* Button */
+.container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #6c63ff;
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Button Hover */
+.container button:hover {
+  background: #574fd6;
+}
+
+/* Message Text */
+#message {
+  margin-top: 15px;
+  font-size: 14px;
+}
+/* Link styling for register/login switch */
+.container p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.container a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+/* Small Screen */
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+  }
+}
